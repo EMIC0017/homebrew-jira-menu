@@ -1,11 +1,11 @@
 # homebrew-jira-menu
 
-A [Homebrew](https://brew.sh/) tap for [JiraMenu](https://github.com/emorin310/jira-menu) — a macOS menubar app for fast Jira Cloud search.
+A [Homebrew](https://brew.sh/) tap for [JiraMenu](https://github.com/EMIC0017/jira-menu) — a macOS menubar app for fast Jira Cloud search.
 
 ## Install
 
 ```sh
-brew tap emorin310/jira-menu
+brew tap EMIC0017/jira-menu
 brew install --cask --no-quarantine jira-menu
 ```
 
