@@ -1,8 +1,8 @@
 cask "jira-menu" do
-  version "0.1.2"
-  sha256 "676e606bf683049a4f2ddd7633f0ea5d27f10377f85f85ba443af454c5248816"
+  version "0.1.3"
+  sha256 "85fcf8ad3106ee758cfe855b51660566a438a151287b0930823a5621d4f5afaf"
 
-  url "https://github.com/EMIC0017/jira-menu/releases/download/v#{version}/JiraMenu-v#{version}.zip"
+  url "https://github.com/EMIC0017/jira-menu/releases/download/v#{version}/JiraMenu-v#{version}.dmg"
   name "JiraMenu"
   desc "Menubar app for fast Jira Cloud search"
   homepage "https://github.com/EMIC0017/jira-menu"
