@@ -9,6 +9,16 @@ cask "jira-menu" do
 
   app "JiraMenu.app"
 
+  # JiraMenu ships unsigned (no Apple Developer cert — see README).
+  # Homebrew removed `--no-quarantine` in v5, so we strip the quarantine
+  # attribute ourselves in postflight. Without this, Gatekeeper blocks
+  # the first launch with "Apple cannot check this app for malware."
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/JiraMenu.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/dev.ericmorin.jiramenu.plist",
     "~/Library/Application Scripts/dev.ericmorin.jiramenu",
