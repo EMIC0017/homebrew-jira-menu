@@ -1,6 +1,6 @@
 cask "jira-menu" do
-  version "0.1.0"
-  sha256 "8285909b7eacaa38b0c5a2a56327f710d33a4bcad21a668bfc72ddb14f39bcc3"
+  version "0.1.2"
+  sha256 "676e606bf683049a4f2ddd7633f0ea5d27f10377f85f85ba443af454c5248816"
 
   url "https://github.com/EMIC0017/jira-menu/releases/download/v#{version}/JiraMenu-v#{version}.zip"
   name "JiraMenu"
